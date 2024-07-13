@@ -11,7 +11,10 @@ import(
 )
 
 func main()  {
+
+	
 	app := fiber.New()
+
 
 	// add CORS middleware
 	app.Use(cors.New(cors.Config{
@@ -22,7 +25,7 @@ func main()  {
 
 	// setup db and auto migrations
 	config.ConnectDB()
-	config.DB.AutoMigrate(&models.Post{})
+	config.DB.AutoMigrate(&models.Post{}, &models.User{})
 
 
 	// setup router

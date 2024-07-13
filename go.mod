@@ -9,6 +9,11 @@ require (
 )
 
 require (
+	github.com/golang-jwt/jwt/v5 v5.2.1
+	golang.org/x/crypto v0.25.0
+)
+
+require (
 	filippo.io/edwards25519 v1.1.0 // indirect
 	github.com/andybalholm/brotli v1.1.0 // indirect
 	github.com/aymerick/douceur v0.2.0 // indirect
